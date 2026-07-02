@@ -1,0 +1,168 @@
+```css
+:root{
+    --fundo:#0b1220;
+    --card:#111827;
+    --fundo-texto:#1f2937;
+    --fundo-senha:#374151;
+    --borda:#3b82f6;
+    --branco:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:var(--fundo);
+    color:var(--branco);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    padding:40px;
+}
+
+.container{
+    width:900px;
+    background:var(--card);
+    padding:35px;
+    border-radius:15px;
+}
+
+h1{
+    color:#60a5fa;
+    margin-bottom:10px;
+}
+
+h3{
+    font-weight:normal;
+    margin-bottom:30px;
+}
+
+.senha{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:35px;
+}
+
+.senha label{
+    margin-bottom:10px;
+}
+
+.senha input{
+    width:100%;
+    padding:18px;
+    font-size:22px;
+    border:none;
+    border-radius:8px;
+    background:white;
+}
+
+.conteudo{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+}
+
+.parametro-senha__titulo{
+    margin-bottom:20px;
+}
+
+.parametro-senha-botoes{
+    display:flex;
+    justify-content:center;
+}
+
+.parametro-senha__botao{
+    background:var(--fundo-texto);
+    color:white;
+    border:2px solid var(--borda);
+    padding:20px;
+    font-size:24px;
+    cursor:pointer;
+    width:70px;
+}
+
+.parametro-senha__texto{
+    border-top:2px solid var(--borda);
+    border-bottom:2px solid var(--borda);
+    padding:20px;
+    font-size:24px;
+    width:90px;
+    text-align:center;
+}
+
+.parametro-senha-checkbox{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin:15px 0;
+}
+
+.checkbox{
+    width:20px;
+    height:20px;
+    cursor:pointer;
+}
+
+label{
+    font-size:18px;
+}
+
+.barra{
+    width:100%;
+    height:30px;
+    background:var(--fundo-senha);
+}
+
+.forca{
+    height:30px;
+    position:relative;
+    bottom:30px;
+    transition:.3s;
+}
+
+.fraca{
+    width:25%;
+    background:#E71B32;
+}
+
+.media{
+    width:50%;
+    background:#FAF408;
+}
+
+.forte{
+    width:100%;
+    background:#00FF85;
+}
+
+.parametro-senha-textos{
+    display:flex;
+    justify-content:space-between;
+    margin-top:-15px;
+}
+
+.entropia{
+    margin-top:20px;
+    text-align:center;
+    color:#60a5fa;
+    font-size:14px;
+    word-break:break-word;
+}
+
+@media(max-width:900px){
+
+.conteudo{
+    grid-template-columns:1fr;
+}
+
+.container{
+    width:100%;
+}
+
+}
+```
